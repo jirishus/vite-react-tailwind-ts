@@ -1,10 +1,12 @@
+import MainLayout from "./layouts/MainLayout"
+import Home from "./pages/Home"
 import './App.css'
 
 function App() {
   return (
-    <>
-      <p className="font-bold text-center text-8xl">Vite</p>
-    </>
+    <MainLayout>
+      <Home />
+    </MainLayout>
   )
 }
 
