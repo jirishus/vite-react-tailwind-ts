@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import BasicForm from '../components/BasicForm';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <p>Home PAGE</p>
+    <div>      
+      <BasicForm />
     </div>
   );
 };
