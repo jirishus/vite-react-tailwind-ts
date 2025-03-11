@@ -1,3 +1,5 @@
+import { debug } from '../utils/debug'
+
 import React, { useState } from 'react';
 import InputField from './InputField';
 import Button from './Button';
@@ -17,7 +19,8 @@ const BasicForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form Data', formData);
+    debug.log('Form Submitted');
+    debug.log('Form Values', formData);
   };
 
   return (

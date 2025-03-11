@@ -5,11 +5,10 @@ const Home: React.FC = () => {
 
   let data = '2003-11-21T01:11:11Z';
 
-  console.log('Formatted Date', FormatDate(data))
-
   return (
     <div>      
       <BasicForm />
+      <p className="text-center mt-5">Published: {FormatDate(data)}</p>
     </div>
   );
 };
