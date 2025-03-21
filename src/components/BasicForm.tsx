@@ -26,11 +26,17 @@ const BasicForm: React.FC = () => {
   return (
     <form className="w-md m-auto mt-15 p-5 shadow-md" onSubmit={handleSubmit}>
       <p className="pb-2">Contact Form</p>
+      <p>
+        <label htmlFor='name'>Name*</label>
+      </p>
       <InputField 
         type="name" 
         label="Name" 
         id="name" name="name" value={formData.name} onChange={handleChange} />
       
+      <p>
+        <label htmlFor='email'>Email*</label>
+      </p>
       <InputField 
         type="email" 
         label="Email" 
